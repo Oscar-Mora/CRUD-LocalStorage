@@ -46,10 +46,10 @@ const drawDB = () => {
             //usamos el += porque vamos a ir concatenando las actividades por cada elemento que existe dentro de LocalStorage
             //Antes de pintar al front hacemos una validacion para cambiar el estilo dependiendo el "estado"
             if (element.estado){
-                actividadesListUI.innerHTML += ` <div class="alert alert-success" role="alert"><span class="material-symbols-outlined float-left mr-2">settings_accessibility</span><b>${element.actividad}</b>-${element.estado}<span class="float-right"><i class="material-symbols-outlined">done</i><i class="material-symbols-outlined">delete</i></span>`
+                actividadesListUI.innerHTML += ` <div class="alert alert-success" role="alert"><span class="material-symbols-outlined float-left mr-2">settings_accessibility</span><b>${element.actividad}</b>-Done<span class="float-right"><i class="material-symbols-outlined">done</i><i class="material-symbols-outlined">delete</i></span>`
             }
             else{
-                actividadesListUI.innerHTML += ` <div class="alert alert-danger" role="alert"><span class="material-symbols-outlined float-left mr-2">settings_accessibility</span><b>${element.actividad}</b>-${element.estado}<span class="float-right"><i class="material-symbols-outlined">done</i><i class="material-symbols-outlined">delete</i></span>`
+                actividadesListUI.innerHTML += ` <div class="alert alert-danger" role="alert"><span class="material-symbols-outlined float-left mr-2">settings_accessibility</span><b>${element.actividad}</b>-Pending<span class="float-right"><i class="material-symbols-outlined">done</i><i class="material-symbols-outlined">delete</i></span>`
             }
             
         });
